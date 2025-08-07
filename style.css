@@ -1,13 +1,16 @@
 body{
     margin:0;
     padding: 0;
+    height: 100vh;
     background-color:#fff1ca ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.areacard{
+.main-container{
     background-color:tomato;
     width:fit-content;
-    margin:50px;
     padding: 20px 40px;
     background-color:#ffb823;
     border-radius: 10px;
