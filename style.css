@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color:#fff1ca ;
+}
+
+.areacard{
+    background-color:tomato;
+    width:fit-content;
+    margin:50px;
+    padding: 20px 40px;
+    background-color:#ffb823;
+    border-radius: 10px;
+    border:2px solid #ff8c00;
+}
+
+.user-input{
+    display: block;
+    margin: 20px auto;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 20px;
+}
+
+.user-input:focus {
+    outline: none;
+}
+
+.btn {
+    border:none;
+    border-radius: 15px;
+    padding: 4px  20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.btn-container {
+    display:flex;
+    justify-content:space-evenly;
+    margin-top: 30px;
+}
+
+#result {
+    font-size: 20px;
+}

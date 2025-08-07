@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Perimeter and Area of rectangle</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="areacard">
+        <input type="text" class="user-input" placeholder="Enter length" id="num1" />
+        <input type="text" class="user-input" placeholder="Enter breadth" id="num2" />
+        <p id="result"></p>
+
+        <div class="btn-container">
+            <button class="btn btn-area" onclick="area()">Area</button>
+            <button class="btn btn-clear" onclick="perimeter()">Perimeter</button>
+            <button class="btn btn-clear" onclick="clearall()">Clear</button>
+
+
+        </div>
+    </div>
+
+    <script>
+        function area() {
+            const inputElement1 = document.getElementById("num1");
+            const inputElement2 = document.getElementById("num2");
+            const resultElement = document.getElementById("result");
+
+            const area = parseInt (inputElement1.value * inputElement2.value);
+            resultElement.innerText =`Area is: ${area}`;
+        }
+
+
+        function perimeter() { }
+
+        function clearall() {
+            const inputElement1 = document.getElementById("num1");
+            const inputElement2 = document.getElementById("num2");
+            const resultElement = document.getElementById("result");
+
+            inputElement1.value = "";
+            inputElement2.value = "";
+            resultElement.innerText = "";
+        }
+    </script>
 </body>
+
 </html>
