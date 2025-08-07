@@ -16,7 +16,7 @@
 
         <div class="btn-container">
             <button class="btn btn-area" onclick="area()">Area</button>
-            <button class="btn btn-clear" onclick="perimeter()">Perimeter</button>
+            <button class="btn btn-perimeter" onclick="perimeter()">Perimeter</button>
             <button class="btn btn-clear" onclick="clearall()">Clear</button>
 
 
@@ -29,12 +29,18 @@
             const inputElement2 = document.getElementById("num2");
             const resultElement = document.getElementById("result");
 
-            const area = parseInt (inputElement1.value * inputElement2.value);
-            resultElement.innerText =`Area is: ${area}`;
+            const area = parseInt(inputElement1.value * inputElement2.value);
+            resultElement.innerText = `Area is: ${area}`;
         }
 
-
-        function perimeter() { }
+        function perimeter() {
+            const inputElement1 = document.getElementById("num1");
+            const inputElement2 = document.getElementById("num2");
+            const resultElement = document.getElementById("result");
+            
+            const perimeter = 2* ( parseInt(inputElement1.value) + parseInt(inputElement2.value) );
+            resultElement.innerText = `Perimeter is: ${perimeter}`;
+        }
 
         function clearall() {
             const inputElement1 = document.getElementById("num1");
@@ -47,5 +53,4 @@
         }
     </script>
 </body>
-
 </html>
